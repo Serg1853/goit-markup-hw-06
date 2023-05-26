@@ -94,9 +94,7 @@ button {
 .menu :focus {
   color: #404bbf;
 }
-/* .menu-item {
-  color: #404bbf;
-} */
+
 .menu-link {
   position: relative;
   display: flex;
@@ -420,6 +418,7 @@ button {
   display: inline-block;
   min-width: 208px;
   height: 80px;
+  margin-right: 80px;
 }
 .footer-text-social {
   line-height: 1.5;
@@ -453,6 +452,58 @@ button {
 }
 .social-list-icon {
   fill: #f4f4fd;
+}
+.footer-subscribe-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-form-subscribe-input {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  margin-right: 24px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.footer-subscribe-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  margin: 0;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-subscribe-button::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  display: inline-block;
+  column-gap: 16px;
+}
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #404bbf;
+}
+.subscribe-icon {
+  margin-left: 16px;
 }
 /* Page Portfolio */
 
@@ -579,6 +630,10 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
   width: 408px;
   min-height: 576px;
   background: #fcfcfc;
@@ -614,12 +669,134 @@ button {
 .icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .icon-close:hover,
-.icon-close:focus {
-  fill: #ffffff;
-} */
+
+.modal-text {
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.contact-form-field-wrapper,
+.contact-form-checkbox-wrapper {
+  display: block;
+  margin-bottom: 20px;
+}
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 38px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-input:focus {
+  outline: none;
+  border: 1px solid #4d5ae5;
+}
+.contact-form-field-desk {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.contact-form-input-icon {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 24px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.contact-form-input-wrapper {
+  display: block;
+  position: relative;
+}
+.contact-form-input:focus + .contact-form-input-icon {
+  fill: #4d5ae5;
+}
+.contact-form-message {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+.contact-form-message:focus {
+  outline: none;
+  border: 1px solid #4d5ae5;
+}
+.contact-form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+.contact-form-own-checkbox {
+  padding: 3px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  background: #ffffff;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-checkmark-icon {
+  fill: #f4f4fd;
+
+  opacity: 0;
+}
+.contact-form-checkbox:focus + .contact-form-own-checkbox {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+.contact-form-checkbox:checked + .contact-form-own-checkbox {
+  background: #404bbf;
+}
+.contact-form-checkbox:checked
+  + .contact-form-own-checkbox
+  .contact-form-checkmark-icon {
+  opacity: 1;
+}
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+.contact-form-submit {
+  display: block;
+  align-items: center;
+  border: none;
+  margin: auto;
+  min-width: 169px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: #ffffff;
+  text-align: center;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+  background: #404bbf;
+}
+.contact-form-privacy-policy {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
