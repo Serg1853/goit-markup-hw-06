@@ -453,11 +453,17 @@ button {
 .social-list-icon {
   fill: #f4f4fd;
 }
+.footer-form-subscribe {
+  display: flex;
+}
 .footer-subscribe-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+}
+.footer-form-subscribe-label {
+  margin-right: 24px;
 }
 .footer-form-subscribe-input {
   padding-left: 16px;
@@ -467,24 +473,27 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
-  margin-right: 24px;
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
 .footer-subscribe-button {
   position: relative;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 165px;
+  height: 40px;
   border: none;
   margin: 0;
   padding: 8px 24px;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #ffffff;
   font: inherit;
   cursor: pointer;
@@ -671,10 +680,13 @@ button {
 }
 
 .modal-text {
+  font-weight: 500;
+  font-size: 16px;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 .is-hidden {
   opacity: 0;
