@@ -9,7 +9,7 @@ body {
   background-color: var(--primary-bg-color);
   color: var(--secondary-text-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -723,15 +723,7 @@ button {
 .contact-form-input:focus {
   border-color: #4d5ae5;
 }
-/* .contact-form-field-desk {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-} */
+
 .contact-form-input-icon {
   position: absolute;
   display: block;
@@ -752,7 +744,7 @@ button {
   height: 120px;
   resize: none;
   padding: 8px 16px;
-  font-weight: 400;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
