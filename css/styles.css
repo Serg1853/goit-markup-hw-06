@@ -85,6 +85,7 @@ button {
   display: flex;
   align-items: center;
   gap: 40px;
+  font-weight: 500;
   color: var(--primary-text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
